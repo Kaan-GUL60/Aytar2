@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Aytar</string>
+
+    <string name="logo_title">Aytar Uygulama Logosu</string>
+
+    <string name="oyunlar">Spiele</string>
+    <string name="muze_ara">Museumssuche</string>
+    <string name="shopping">Einkaufen</string>
+    <string name="profil">Profil</string>
+    <string name="maps">Kartensystem</string>
+    <string name="wallet">Meine Brieftasche</string>
+
+    <string name="welcome_text">Willkommen</string>
+    <string name="user_name">Mustafa Kaya</string>
+    <string name="ex_yorum">Kommentar über das Museum</string>
+    <string name="sender">Senden</string>
+
+    <string name="login">Anmelden</string>
+
+    <string name="baslık1">VOLLER NAME</string>
+    <string name="baslık2">PASSWORT</string>
+    <string name="baslık3">E_MAIL</string>
+
+    <string name="baslik4">Über das Museum</string>
+    <string name="baslik5">3D Museum</string>
+    <string name="baslik6">Ticket kaufen</string>
+    <string name="baslik7">Kommentare</string>
+    <string name="baslik8">Profilbildschirm</string>
+
+    <string name="baslik9">Profil bearbeiten</string>
+    <string name="baslik10">Über uns</string>
+    <string name="baslik11">Anwendung teilen</string>
+    <string name="baslik12">Einstellungen</string>
+
+    <string name="baslik13">Profilbild auswählen</string>
+    <string name="baslik14">Passwort ändern</string>
+    <string name="baslik15">E-Mail für neues Passwort senden</string>
+    <string name="baslik16">Sprache</string>
+    <string name="baslik17">Adressinformationen</string>
+    <string name="baslik18">Abbrechen</string>
+    <string name="baslik19">Änderungen speichern</string>
+    <string name="baslik20">Meine virtuelle Geldbörse</string>
+    <string name="baslik21">Konto</string>
+    <string name="baslik22">Geld aufladen</string>
+    <string name="baslik23">100,00</string>
+    <string name="baslik24">Betrag, den Sie hochladen möchten</string>
+    <string name="baslik25">____,__</string>
+    <string name="baslik26">Vorgang erfolgreich</string>
+    <string name="baslik27">Zurück</string>
+    <string name="baslik28">Kaufen</string>
+    <string name="baslik29">Verfügbares Guthaben</string>
+    <string name="baslik30">Produkt</string>
+    <string name="baslik31">x Stück</string>
+    <string name="baslik32">Produktname</string>
+    <string name="baslik33">₺60,00</string>
+    <string name="baslik34">Kartierungssystem</string>
+    <string name="baslik35">Wo ist das Museum</string>
+    <string name="baslik36">Benachrichtigung</string>
+
+    <string name="kart1">Kartennummer</string>
+    <string name="kart2">CVC</string>
+    <string name="kart3">Kartenablaufdatum</string>
+    <string name="kart4">Überprüfungscode</string>
+    <string name="kart5">Zustimmen</string>
+
+    <string name="TLisareti">₺</string>
+
+
+    <string name="dil1">Türkisch</string>
+    <string name="dil2">Englisch</string>
+    <string name="dil3">Französisch</string>
+    <string name="dil4">Deutsch</string>
+
+    <string name="appLink">https://google.com</string>
+
+    <string name="hint1">Vollen Namen eingeben</string>
+    <string name="hint2">Passwort eingeben</string>
+    <string name="hint3">Eingabe der E-Mail-Adresse</string>
+
+    <string name="hint4">Museum Name</string>
+    <string name="hint5">Museum Beschreibung</string>
+    <string name="hint6">Geben Sie Ihren Kommentar ein</string>
+
+    <string name="hint7">Provinz</string>
+    <string name="hint8">Bundesland</string>
+    <string name="hint9">Nachbarschaft</string>
+    <string name="hint10">Adresse</string>
+
+    <string name="title_activity_main_menu">MainMenuActivity</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_test">TestActivity</string>
+
+</resources>

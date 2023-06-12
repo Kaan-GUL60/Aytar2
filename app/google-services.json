@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "953298052789",
+    "project_id": "aytar-f4152",
+    "storage_bucket": "aytar-f4152.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:953298052789:android:201f9d9ccfc028da76c0fc",
+        "android_client_info": {
+          "package_name": "com.gkaan.aytar"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "953298052789-uhjjjbet9f293n6aoi2adqem8vs8qil7.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.gkaan.aytar",
+            "certificate_hash": "16960e1c776b6f829ea45e9acc854c533bbb67e6"
+          }
+        },
+        {
+          "client_id": "953298052789-h83719t6t2ue8ucs61222p0p0n5q6jc6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDQSGrJ8G8UTNMOsHkJ4Li4wqnleopUVyk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "953298052789-h83719t6t2ue8ucs61222p0p0n5q6jc6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

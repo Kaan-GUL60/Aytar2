@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+        android:background="@color/background_color"
+             tools:context=".HaritaSistemiFragment">
+
+
+    <LinearLayout
+            android:orientation="horizontal"
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:gravity="center"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" android:id="@+id/linearLayout5">
+
+        <ImageView
+                android:src="@drawable/arrow_back_ios_48px"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:id="@+id/imageView6" android:layout_weight="1"/>
+        <TextView
+                android:text="@string/baslik34"
+                android:fontFamily="@font/poppins_bold"
+                android:textSize="24sp"
+                android:gravity="start"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:id="@+id/textView7" android:layout_weight="5"/>
+    </LinearLayout>
+    <ImageView
+            android:src="@drawable/kroki_ornek"
+            android:layout_width="255dp"
+            android:layout_height="380dp" android:id="@+id/imageView27"
+            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@+id/linearLayout5"
+            app:layout_constraintVertical_bias="0.06999999"/>
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent">
+        <Button
+                android:text="@string/baslik35"
+                android:layout_weight="1"
+                android:layout_margin="10dp"
+                android:background="@drawable/green_button_bg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/button2"/>
+        <Button
+                android:text="@string/baslik36"
+                android:layout_margin="10dp"
+                android:background="@drawable/green_button_bg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/button3"
+                android:layout_weight="1"/>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

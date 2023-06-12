@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools" android:id="@+id/sanal_hesap_navigation"
+            app:startDestination="@id/hesapGecmisFragment">
+
+    <fragment android:id="@+id/hesapGecmisFragment" android:name="com.gkaan.aytar.HesapGecmisFragment"
+              android:label="fragment_hesap_gecmis" tools:layout="@layout/fragment_hesap_gecmis">
+        <action android:id="@+id/action_hesapGecmisFragment_to_paraYukleFragment"
+                app:destination="@id/paraYukleFragment"/>
+    </fragment>
+    <fragment android:id="@+id/paraYukleFragment" android:name="com.gkaan.aytar.ParaYukleFragment"
+              android:label="fragment_para_yukle" tools:layout="@layout/fragment_para_yukle">
+        <action android:id="@+id/action_paraYukleFragment_to_satinAlmaBasariliFragment2"
+                app:destination="@id/satinAlmaBasariliFragment2"/>
+    </fragment>
+    <fragment android:id="@+id/satinAlmaBasariliFragment2" android:name="com.gkaan.aytar.SatinAlmaBasariliFragment"
+              android:label="fragment_satin_alma_basarili" tools:layout="@layout/fragment_satin_alma_basarili">
+        <action android:id="@+id/action_satinAlmaBasariliFragment2_to_hesapGecmisFragment"
+                app:destination="@id/hesapGecmisFragment"/>
+    </fragment>
+</navigation>

@@ -1,0 +1,94 @@
+<resources>
+    <string name="app_name">Aytar</string>
+    <string name="logo_title">Aytar Uygulama Logosu</string>
+
+    <string name="oyunlar">Oyunlar</string>
+    <string name="muze_ara">Müze Ara</string>
+    <string name="shopping">Alışveriş</string>
+    <string name="profil">Profil</string>
+    <string name="maps">Harita Sistemi</string>
+    <string name="wallet">Cüzdanım</string>
+
+    <string name="welcome_text">Hoş Geldiniz</string>
+    <string name="user_name">Mustafa Kaya</string>
+    <string name="ex_yorum">Müze hakkında yapılan yorum</string>
+    <string name="sender">Gönder</string>
+
+    <string name="login">Giriş</string>
+
+    <string name="baslık1">AD SOYAD</string>
+    <string name="baslık2">ŞİFRE</string>
+    <string name="baslık3">E_POSTA</string>
+
+    <string name="baslik4">Müze Hakkında</string>
+    <string name="baslik5">3D Müze</string>
+    <string name="baslik6">Bilet Al</string>
+    <string name="baslik7">Yorumlar</string>
+    <string name="baslik8">Profil Ekranı</string>
+
+    <string name="baslik9">Profili Düzenle</string>
+    <string name="baslik10">Hakkında</string>
+    <string name="baslik11">Uygulamayı Paylaş</string>
+    <string name="baslik12">Ayarlar</string>
+
+    <string name="baslik13">Profil Resmi Seç</string>
+    <string name="baslik14">Şifre Değiştir</string>
+    <string name="baslik15">Yeni şifre için e-posta gönder</string>
+    <string name="baslik16">Dil</string>
+    <string name="baslik17">Adres Bilgisi</string>
+    <string name="baslik18">İptal</string>
+    <string name="baslik19">Değişiklikleri Kaydet</string>
+    <string name="baslik20">Sanal Cüzdanım</string>
+    <string name="baslik21">Hesap</string>
+    <string name="baslik22">Para Yükle</string>
+    <string name="baslik23">100,00</string>
+    <string name="baslik24">Yüklemek istediğiniz miktar</string>
+    <string name="baslik25">____,__</string>
+    <string name="baslik26">İşlem Başarılı</string>
+    <string name="baslik27">Geri Dön</string>
+    <string name="baslik28">Satın Al</string>
+    <string name="baslik29">Kullanılabilir Bakiye</string>
+    <string name="baslik30">Ürün</string>
+    <string name="baslik31">x adet</string>
+    <string name="baslik32">Ürün Adı</string>
+    <string name="baslik33">₺60,00</string>
+    <string name="baslik34">Haritalama Sistemi</string>
+    <string name="baslik35">Müze Nerede</string>
+    <string name="baslik36">İhbar</string>
+
+    <string name="kart1">Kart No</string>
+    <string name="kart2">CVC</string>
+    <string name="kart3">Kart Son Geçerlilik Tarihi</string>
+    <string name="kart4">Doğrulama Kodu</string>
+    <string name="kart5">Onayla</string>
+
+    <string name="TLisareti">₺</string>
+
+
+    <string name="dil1">Türkçe</string>
+    <string name="dil2">İngilizce</string>
+    <string name="dil3">Fransızca</string>
+    <string name="dil4">Almanca</string>
+
+    <string name="appLink">https://google.com</string>
+
+    <string name="hint1">Ad Soyad Giriniz</string>
+    <string name="hint2">Şifre Giriniz</string>
+    <string name="hint3">E-posta adresinizi giriniz</string>
+
+    <string name="hint4">Müze Adı</string>
+    <string name="hint5">Müze Açıklaması</string>
+    <string name="hint6">Yorumunuzu yazınız</string>
+
+    <string name="hint7">İl</string>
+    <string name="hint8">İlçe</string>
+    <string name="hint9">Mahalle</string>
+    <string name="hint10">Adres</string>
+
+    <string name="title_activity_main_menu">MainMenuActivity</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_test">TestActivity</string>
+
+
+</resources>

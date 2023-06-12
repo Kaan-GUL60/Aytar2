@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background_color"
+        tools:context=".ProfilFragment">
+
+
+    <LinearLayout
+            android:orientation="horizontal"
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:gravity="center"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" android:id="@+id/linearLayout5">
+
+        <ImageView
+                android:src="@drawable/arrow_back_ios_48px"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:id="@+id/imageView6" android:layout_weight="1"/>
+        <TextView
+                android:text="@string/baslik8"
+                android:fontFamily="@font/poppins_bold"
+                android:textSize="24sp"
+                android:gravity="start"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:id="@+id/textView7" android:layout_weight="5"/>
+    </LinearLayout>
+    <ImageView
+            android:src="@drawable/account_circle_48px"
+            android:layout_width="113dp"
+            android:layout_height="113dp" android:id="@+id/imageView7"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@+id/linearLayout5"
+            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintVertical_bias="0.109"
+    />
+    <TextView
+            android:text="@string/user_name"
+            android:fontFamily="@font/poppins_bold"
+            android:textSize="24sp"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/textView15"
+            app:layout_constraintEnd_toEndOf="@+id/imageView7"
+            app:layout_constraintStart_toStartOf="@+id/imageView7"
+            app:layout_constraintTop_toBottomOf="@+id/imageView7" android:layout_marginTop="6dp"/>
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp" app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView15">
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+            <LinearLayout
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:id="@+id/editProfil"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/item_bg"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                <ImageView
+                        android:src="@drawable/edit_48px"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" android:id="@+id/imageView15" android:layout_weight="1"/>
+                <TextView
+                        android:text="@string/baslik9"
+                        android:textSize="16sp"
+                        android:fontFamily="@font/poppins_bold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" android:id="@+id/textView22" android:layout_weight="4"/>
+                <ImageView
+                        android:src="@drawable/arrow_back_ios_48px"
+                        android:layout_width="wrap_content"
+                        android:rotation="180"
+                        android:layout_height="wrap_content" android:id="@+id/imageView16" android:layout_weight="1"/>
+            </LinearLayout>
+            <LinearLayout
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:id="@+id/hakkinda"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/item_bg"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                <ImageView
+                        android:src="@drawable/help_48px"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" android:id="@+id/imageView18" android:layout_weight="1"
+                        />
+                <TextView
+                        android:text="@string/baslik10"
+                        android:textSize="16sp"
+                        android:fontFamily="@font/poppins_bold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" android:id="@+id/textView23" android:layout_weight="4"/>
+                <ImageView
+                        android:src="@drawable/arrow_back_ios_48px"
+                        android:layout_width="wrap_content"
+                        android:rotation="180"
+                        android:layout_height="wrap_content" android:id="@+id/imageView17" android:layout_weight="1"/>
+            </LinearLayout>
+            <LinearLayout
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:id="@+id/uygulamayiPaylas"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/item_bg"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                <ImageView
+                        android:src="@drawable/share"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" android:id="@+id/imageView19" android:layout_weight="1"
+                        />
+                <LinearLayout
+                        android:orientation="vertical"
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent" android:layout_weight="4">
+                    <TextView
+                            android:text="@string/baslik11"
+                            android:textSize="16sp"
+                            android:fontFamily="@font/poppins_bold"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" android:id="@+id/textView24"
+                            android:layout_weight="4"/>
+                    <TextView
+                            android:text="@string/appLink"
+                            android:autoLink="@string/appLink"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" android:id="@+id/textView25"
+                            android:layout_weight="1"/>
+                </LinearLayout>
+                <ImageView
+                        android:src="@drawable/content_copy_48px"
+                        android:layout_width="48dp"
+                        android:layout_height="48dp" android:id="@+id/imageView20" android:layout_weight="1"/>
+            </LinearLayout>
+            <Button
+                    android:text="Button"
+                    android:background="@drawable/green_button_bg"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/cikisYap"/>
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools" android:id="@+id/muze_navigation"
+            app:startDestination="@id/muzeAraFragment">
+
+    <fragment android:id="@+id/muzeAraFragment" android:name="com.gkaan.aytar.MuzeAraFragment"
+              android:label="fragment_muze_ara" tools:layout="@layout/fragment_muze_ara">
+        <action android:id="@+id/action_muzeAraFragment_to_muzeDetayFragment" app:destination="@id/muzeDetayFragment"/>
+    </fragment>
+    <fragment android:id="@+id/muzeDetayFragment" android:name="com.gkaan.aytar.muzeDetayFragment"
+              android:label="fragment_muze_detay" tools:layout="@layout/fragment_muze_detay">
+        <action android:id="@+id/action_muzeDetayFragment_to_muzeAraFragment" app:destination="@id/muzeAraFragment"/>
+        <action android:id="@+id/action_muzeDetayFragment_to_webWievMuzeFragment"
+                app:destination="@id/webWievMuzeFragment"/>
+        <action android:id="@+id/action_muzeDetayFragment_to_satinAlMuzeFragment"
+                app:destination="@id/satinAlMuzeFragment"/>
+    </fragment>
+    <fragment android:id="@+id/webWievMuzeFragment" android:name="com.gkaan.aytar.WebWievMuzeFragment"
+              android:label="fragment_web_wiev_muze" tools:layout="@layout/fragment_web_wiev_muze"/>
+    <fragment android:id="@+id/satinAlmaBasariliFragment" android:name="com.gkaan.aytar.SatinAlmaBasariliFragment"
+              android:label="fragment_satin_alma_basarili" tools:layout="@layout/fragment_satin_alma_basarili"/>
+    <fragment android:id="@+id/satinAlMuzeFragment" android:name="com.gkaan.aytar.SatinAlMuzeFragment"
+              android:label="fragment_satin_al_muze" tools:layout="@layout/fragment_satin_al_muze">
+        <action android:id="@+id/action_satinAlMuzeFragment_to_satinAlmaBasariliFragment"
+                app:destination="@id/satinAlmaBasariliFragment"/>
+    </fragment>
+</navigation>
