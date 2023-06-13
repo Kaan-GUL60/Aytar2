@@ -30,8 +30,6 @@ class SignActivity : AppCompatActivity() {
 
     }
 
-
-
     private fun kayitOl(){
         val email = binding.editTextUserGmail.text.toString()
         val sifre = binding.editTextUserPassword.text.toString()

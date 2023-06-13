@@ -22,7 +22,7 @@
                 android:src="@drawable/arrow_back_ios_48px"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/imageView6"
+                android:id="@+id/backImage"
                 android:layout_weight="1"/>
         <TextView
                 android:text="@string/baslik12"
@@ -86,25 +86,25 @@
                             android:layout_width="wrap_content"
                             android:layout_height="60dp"
                             :id="@+id/imageButton"
-                            android:layout_weight="1"/>
+                            android:layout_weight="1" tools:ignore="SpeakableTextPresentCheck"/>
                     <ImageButton
                             android:src="@drawable/account_circle_48px"
                             android:layout_width="wrap_content"
                             android:layout_height="60dp"
                             android:id="@+id/imageButton2"
-                            android:layout_weight="1"/>
+                            android:layout_weight="1" tools:ignore="SpeakableTextPresentCheck"/>
                     <ImageButton
                             android:src="@drawable/account_circle_48px"
                             android:layout_width="wrap_content"
                             android:layout_height="match_parent"
                             android:id="@+id/imageButton3"
-                            android:layout_weight="1"/>
+                            android:layout_weight="1" tools:ignore="SpeakableTextPresentCheck"/>
                     <ImageButton
                             android:src="@drawable/account_circle_48px"
                             android:layout_width="wrap_content"
                             android:layout_height="match_parent"
                             android:id="@+id/imageButton4"
-                            android:layout_weight="1"/>
+                            android:layout_weight="1" tools:ignore="SpeakableTextPresentCheck"/>
                 </LinearLayout>
             </LinearLayout>
             <LinearLayout
@@ -135,13 +135,14 @@
 
                     android:layout_width="match_parent"
                     android:layout_height="match_parent">
+
                 <TextView
                         android:text="@string/baslik16"
                         android:layout_margin="10dp"
                         android:fontFamily="@font/poppins_light"
+
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:id="@+id/textView29"/>
+                        android:layout_height="wrap_content" android:id="@+id/textView29"/>
                 <LinearLayout
                         android:orientation="horizontal"
                         android:gravity="center"

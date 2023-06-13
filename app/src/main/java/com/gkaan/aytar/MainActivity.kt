@@ -15,7 +15,7 @@ import com.google.firebase.auth.FirebaseAuth
 
 
 class MainActivity : AppCompatActivity() {
-    //private val SPLASH_DELAY: Long = 2500
+    private val SPLASH_DELAY: Long = 2500
     private lateinit var auth: FirebaseAuth
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -26,11 +26,17 @@ class MainActivity : AppCompatActivity() {
 
         val guncelKullanici = auth.currentUser
 
-        if (guncelKullanici != null){
-            //Handler().postDelayed({
-            val intent = Intent(this,SignActivity::class.java)
-            startActivity(intent)
-
+        if (guncelKullanici != null) {
+            Handler().postDelayed({
+                val intent = Intent(this, MainMenuActivity::class.java)
+                startActivity(intent)
+            }, SPLASH_DELAY)
+        }
+        else if (guncelKullanici == null) {
+            Handler().postDelayed({
+                val intent = Intent(this, SignActivity::class.java)
+                startActivity(intent)
+            }, SPLASH_DELAY)
         }
 
         /*

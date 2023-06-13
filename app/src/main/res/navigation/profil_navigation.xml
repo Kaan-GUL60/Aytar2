@@ -2,7 +2,7 @@
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
             xmlns:app="http://schemas.android.com/apk/res-auto"
             xmlns:tools="http://schemas.android.com/tools" android:id="@+id/profil_navigation"
-            app:startDestination="@id/profilFragment">
+            app:startDestination="@id/ayarlarFragment">
 
     <fragment android:id="@+id/profilFragment" android:name="com.gkaan.aytar.ProfilFragment"
               android:label="fragment_profil" tools:layout="@layout/fragment_profil">

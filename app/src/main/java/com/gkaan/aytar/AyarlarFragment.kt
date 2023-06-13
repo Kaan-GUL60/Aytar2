@@ -7,7 +7,8 @@ import android.view.View
 import android.view.ViewGroup
 
 
-class AyarlarFragment : Fragment() {
+class AyarlarFragment : Fragment(R.layout.fragment_ayarlar) {
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
