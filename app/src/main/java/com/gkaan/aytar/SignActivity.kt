@@ -26,6 +26,10 @@ class SignActivity : AppCompatActivity() {
         binding.signButton.setOnClickListener {
             kayitOl()
         }
+        binding.changeLoginButton.setOnClickListener {
+            val intent = Intent(this,LoginActivity::class.java)
+            startActivity(intent)
+        }
 
 
     }

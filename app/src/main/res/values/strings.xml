@@ -15,6 +15,7 @@
     <string name="sender">Gönder</string>
 
     <string name="login">Giriş</string>
+    <string name="signIn">Kayıt Ol</string>
 
     <string name="baslık1">AD SOYAD</string>
     <string name="baslık2">ŞİFRE</string>
@@ -55,6 +56,8 @@
     <string name="baslik34">Haritalama Sistemi</string>
     <string name="baslik35">Müze Nerede</string>
     <string name="baslik36">İhbar</string>
+    <string name="baslik37">Çıkış Yap</string>
+    <string name="baslik38">Hesabın Var mı? Giriş Yap</string>
 
     <string name="kart1">Kart No</string>
     <string name="kart2">CVC</string>

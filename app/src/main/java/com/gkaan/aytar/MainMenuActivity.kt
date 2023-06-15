@@ -47,6 +47,7 @@ class MainMenuActivity : AppCompatActivity() {
                 val intent = Intent(this,SanalParaActivity::class.java)
                 startActivity(intent)
             }
+
         }catch (e: Exception){
             Toast.makeText(applicationContext,"Bir hata oluştu: "  + e.localizedMessage, Toast.LENGTH_LONG).show()
             e.localizedMessage?.let { Log.d("Error screen", it) }

@@ -21,7 +21,8 @@
         <ImageView
                 android:src="@drawable/arrow_back_ios_48px"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content" android:id="@+id/imageView6" android:layout_weight="1"/>
+                android:layout_height="wrap_content"
+                android:id="@+id/backImageProfil" android:layout_weight="1"/>
         <TextView
                 android:text="@string/baslik8"
                 android:fontFamily="@font/poppins_bold"
@@ -93,7 +94,7 @@
                         android:src="@drawable/help_48px"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content" android:id="@+id/imageView18" android:layout_weight="1"
-                        />
+                />
                 <TextView
                         android:text="@string/baslik10"
                         android:textSize="16sp"
@@ -109,46 +110,37 @@
             <LinearLayout
                     android:orientation="horizontal"
                     android:gravity="center"
-                    android:id="@+id/uygulamayiPaylas"
+                    android:id="@+id/shareApp"
                     android:layout_margin="10dp"
                     android:background="@drawable/item_bg"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent">
                 <ImageView
                         android:src="@drawable/share"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content" android:id="@+id/imageView19" android:layout_weight="1"
-                        />
-                <LinearLayout
-                        android:orientation="vertical"
+                        android:layout_width="29dp"
+                        android:layout_height="wrap_content" android:id="@+id/imageView19" android:layout_weight="1"/>
+                <TextView
+                        android:text="@string/baslik11"
+                        android:textSize="16sp"
+                        android:fontFamily="@font/poppins_bold"
 
                         android:layout_width="wrap_content"
-                        android:layout_height="match_parent" android:layout_weight="4">
-                    <TextView
-                            android:text="@string/baslik11"
-                            android:textSize="16sp"
-                            android:fontFamily="@font/poppins_bold"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content" android:id="@+id/textView24"
-                            android:layout_weight="4"/>
-                    <TextView
-                            android:text="@string/appLink"
-                            android:autoLink="@string/appLink"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content" android:id="@+id/textView25"
-                            android:layout_weight="1"/>
-                </LinearLayout>
+                        android:layout_height="wrap_content" android:id="@+id/textView24" android:layout_weight="1"/>
                 <ImageView
                         android:src="@drawable/content_copy_48px"
-                        android:layout_width="48dp"
-                        android:layout_height="48dp" android:id="@+id/imageView20" android:layout_weight="1"/>
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" android:id="@+id/imageView20" android:layout_weight="1"/>
             </LinearLayout>
             <Button
-                    android:text="Button"
-                    android:background="@drawable/green_button_bg"
+                    android:text="@string/baslik37"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:id="@+id/cikisYap"/>
+                    android:layout_margin="10dp"
+                    android:background="@drawable/green_button_bg"
+                    android:id="@+id/logOutButton"/>
+
+
         </LinearLayout>
     </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>

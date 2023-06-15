@@ -90,5 +90,8 @@
 
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="title_activity_test">TestActivity</string>
+    <string name="baslik37">Çıkış yap</string>
+    <string name="baslik38">Hesabın Var mı? Giriş Yap</string>
+    <string name="signIn">Kayıt ol</string>
 
 </resources>

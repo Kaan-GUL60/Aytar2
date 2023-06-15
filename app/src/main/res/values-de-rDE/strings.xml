@@ -91,5 +91,8 @@
 
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="title_activity_test">TestActivity</string>
+    <string name="baslik37">Auslogen</string>
+    <string name="baslik38">Hast du ein Konto? Einloggen</string>
+    <string name="signIn">Anmelden</string>
 
 </resources>

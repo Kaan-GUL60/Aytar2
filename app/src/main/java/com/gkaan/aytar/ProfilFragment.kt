@@ -1,21 +1,28 @@
 package com.gkaan.aytar
 
+import android.content.Intent
 import android.os.Bundle
+import android.util.Log
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
+import com.gkaan.aytar.databinding.FragmentProfilBinding
+import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.auth.ktx.auth
+import com.google.firebase.ktx.Firebase
 
 
-
-class ProfilFragment : Fragment() {
-
+class ProfilFragment : Fragment(R.layout.fragment_profil) {
+    private var _binding: FragmentProfilBinding? = null
+    private val binding get() = _binding!!
+    private lateinit var auth: FirebaseAuth
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        arguments?.let {
 
-        }
+
     }
 
     override fun onCreateView(
@@ -23,7 +30,27 @@ class ProfilFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_profil, container, false)
+        _binding = FragmentProfilBinding.inflate(inflater,container,false)
+        val view = binding.root
+
+        auth = Firebase.auth
+
+        binding.backImageProfil.setOnClickListener {
+            val intent = Intent(activity, MainMenuActivity::class.java)
+            activity?.startActivity(intent)
+        }
+        binding.logOutButton.setOnClickListener {
+            auth.signOut()
+            val intent = Intent(activity,SignActivity::class.java)
+            activity?.startActivity(intent)
+        }
+        return view
+    }
+
+    override fun onDestroyView() {
+        super.onDestroyView()
+        _binding=null
+
     }
 
 }
