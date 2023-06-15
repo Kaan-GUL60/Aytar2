@@ -153,7 +153,8 @@
                             android:layout_margin="5dp"
                             android:background="@drawable/green_button_bg"
                             android:layout_width="wrap_content"
-                            android:layout_height="wrap_content" android:id="@+id/dilTurkceButton"/>
+                            android:layout_height="wrap_content"
+                            android:id="@+id/dilTurkceButton"/>
                     <Button
                             android:text="@string/dil2"
                             android:layout_margin="5dp"

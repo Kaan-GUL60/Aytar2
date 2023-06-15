@@ -8,6 +8,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
+import androidx.navigation.fragment.findNavController
 import com.gkaan.aytar.databinding.FragmentProfilBinding
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.ktx.auth
@@ -34,10 +35,16 @@ class ProfilFragment : Fragment(R.layout.fragment_profil) {
         val view = binding.root
 
         auth = Firebase.auth
+        val guncelKullanici = auth.currentUser!!.displayName
 
+
+        binding.textView15.text = guncelKullanici.toString()
         binding.backImageProfil.setOnClickListener {
             val intent = Intent(activity, MainMenuActivity::class.java)
             activity?.startActivity(intent)
+        }
+        binding.editProfil.setOnClickListener {
+            findNavController().navigate(R.id.action_profilFragment_to_ayarlarFragment)
         }
         binding.logOutButton.setOnClickListener {
             auth.signOut()
