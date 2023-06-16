@@ -6,6 +6,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.navigation.fragment.findNavController
 import com.gkaan.aytar.databinding.FragmentMuzeAraBinding
 import com.gkaan.aytar.databinding.FragmentProfilBinding
 
@@ -28,6 +29,42 @@ class MuzeAraFragment : Fragment() {
         binding.backImageMuze.setOnClickListener {
             val intent = Intent(activity, MainMenuActivity::class.java)
             activity?.startActivity(intent)
+        }
+        binding.m1.setOnClickListener {
+            val bundle = Bundle()
+
+            bundle.putString("mKod","m1")
+            val navController = findNavController()
+            navController.navigate(R.id.muzeDetayFragment,bundle)
+        }
+        binding.m2.setOnClickListener {
+            val bundle = Bundle()
+
+            bundle.putString("mKod","m2")
+            val navController = findNavController()
+            navController.navigate(R.id.muzeDetayFragment,bundle)
+        }
+
+        binding.m3.setOnClickListener {
+            val bundle = Bundle()
+
+            bundle.putString("mKod","m3")
+            val navController = findNavController()
+            navController.navigate(R.id.muzeDetayFragment,bundle)
+        }
+        binding.m4.setOnClickListener {
+            val bundle = Bundle()
+
+            bundle.putString("mKod","m4")
+            val navController = findNavController()
+            navController.navigate(R.id.muzeDetayFragment,bundle)
+        }
+        binding.m5.setOnClickListener {
+            val bundle = Bundle()
+
+            bundle.putString("mKod","m5")
+            val navController = findNavController()
+            navController.navigate(R.id.muzeDetayFragment,bundle)
         }
 
 

@@ -5,10 +5,14 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.navigation.fragment.findNavController
+import com.gkaan.aytar.databinding.FragmentMuzeDetayBinding
+import com.gkaan.aytar.databinding.FragmentSatinAlmaBasariliBinding
 
 
 class SatinAlmaBasariliFragment : Fragment() {
-
+    private var _binding: FragmentSatinAlmaBasariliBinding? = null
+    private val binding get() = _binding!!
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         arguments?.let {
@@ -21,7 +25,14 @@ class SatinAlmaBasariliFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_satin_alma_basarili, container, false)
+        _binding = FragmentSatinAlmaBasariliBinding.inflate(inflater, container, false)
+        val view = binding.root
+        binding.geriDonButton.setOnClickListener {
+            findNavController().navigate(R.id.action_satinAlmaBasariliFragment_to_muzeDetayFragment)
+        }
+
+
+        return view
     }
 
 

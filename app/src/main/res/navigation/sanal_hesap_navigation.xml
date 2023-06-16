@@ -13,6 +13,8 @@
               android:label="fragment_para_yukle" tools:layout="@layout/fragment_para_yukle">
         <action android:id="@+id/action_paraYukleFragment_to_satinAlmaBasariliFragment2"
                 app:destination="@id/satinAlmaBasariliFragment2"/>
+        <action android:id="@+id/action_paraYukleFragment_to_hesapGecmisFragment"
+                app:destination="@id/hesapGecmisFragment"/>
     </fragment>
     <fragment android:id="@+id/satinAlmaBasariliFragment2" android:name="com.gkaan.aytar.SatinAlmaBasariliFragment"
               android:label="fragment_satin_alma_basarili" tools:layout="@layout/fragment_satin_alma_basarili">

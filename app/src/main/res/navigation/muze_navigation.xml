@@ -19,7 +19,10 @@
     <fragment android:id="@+id/webWievMuzeFragment" android:name="com.gkaan.aytar.WebWievMuzeFragment"
               android:label="fragment_web_wiev_muze" tools:layout="@layout/fragment_web_wiev_muze"/>
     <fragment android:id="@+id/satinAlmaBasariliFragment" android:name="com.gkaan.aytar.SatinAlmaBasariliFragment"
-              android:label="fragment_satin_alma_basarili" tools:layout="@layout/fragment_satin_alma_basarili"/>
+              android:label="fragment_satin_alma_basarili" tools:layout="@layout/fragment_satin_alma_basarili">
+        <action android:id="@+id/action_satinAlmaBasariliFragment_to_muzeDetayFragment"
+                app:destination="@id/muzeDetayFragment"/>
+    </fragment>
     <fragment android:id="@+id/satinAlMuzeFragment" android:name="com.gkaan.aytar.SatinAlMuzeFragment"
               android:label="fragment_satin_al_muze" tools:layout="@layout/fragment_satin_al_muze">
         <action android:id="@+id/action_satinAlMuzeFragment_to_satinAlmaBasariliFragment"

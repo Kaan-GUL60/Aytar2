@@ -5,10 +5,14 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.navigation.fragment.findNavController
+import com.gkaan.aytar.databinding.FragmentMuzeDetayBinding
+import com.gkaan.aytar.databinding.FragmentParaYukleBinding
 
 
 class ParaYukleFragment : Fragment() {
-
+    private var _binding: FragmentParaYukleBinding? = null
+    private val binding get() = _binding!!
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -22,7 +26,12 @@ class ParaYukleFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_para_yukle, container, false)
+        _binding = FragmentParaYukleBinding.inflate(inflater, container, false)
+        val view = binding.root
+        binding.imageView24.setOnClickListener {
+            findNavController().navigate(R.id.action_paraYukleFragment_to_hesapGecmisFragment)
+        }
+        return view
     }
 
 }

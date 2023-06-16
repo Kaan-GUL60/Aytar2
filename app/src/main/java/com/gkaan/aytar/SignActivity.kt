@@ -8,9 +8,11 @@ import android.view.View
 import android.widget.Toast
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.ktx.userProfileChangeRequest
+import com.google.firebase.database.FirebaseDatabase
 
 class SignActivity : AppCompatActivity() {
     private lateinit var auth : FirebaseAuth
+    var database = FirebaseDatabase.getInstance("https://aytar-f4152-default-rtdb.europe-west1.firebasedatabase.app").reference
 
     private lateinit var binding: ActivitySignBinding
 
@@ -23,8 +25,13 @@ class SignActivity : AppCompatActivity() {
 
         auth = FirebaseAuth.getInstance()
 
+
+
+
         binding.signButton.setOnClickListener {
             kayitOl()
+            savedDatabase()
+
         }
         binding.changeLoginButton.setOnClickListener {
             val intent = Intent(this,LoginActivity::class.java)
@@ -43,6 +50,7 @@ class SignActivity : AppCompatActivity() {
             //asenkron
             if(task.isSuccessful) {
                 //diğer aktivitiye geç
+                savedDatabase()
                 val guncelKullanici = auth.currentUser
                 val profilGuncellemeIstedgi = userProfileChangeRequest {
                     displayName = kullaniciAdi
@@ -63,6 +71,15 @@ class SignActivity : AppCompatActivity() {
             Toast.makeText(applicationContext,exception.localizedMessage, Toast.LENGTH_LONG).show()
         }
 
+    }
+    private fun savedDatabase(){
+        val email = binding.editTextUserGmail.text.toString()
+        val sifre = binding.editTextUserPassword.text.toString()
+        val image= "null"
+        val pSanalBakiye = 100 //varsayılan olarak
+        val kullaniciAdi = binding.editTextUserName.text.toString()
+        val asd = auth.currentUser?.uid.toString()
+        database.child("kullanicilar").child(asd).setValue(saveUser(kullaniciAdi,asd,sifre,email,image,pSanalBakiye))
     }
 
 }

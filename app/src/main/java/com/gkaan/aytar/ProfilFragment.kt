@@ -50,6 +50,8 @@ class ProfilFragment : Fragment(R.layout.fragment_profil) {
             auth.signOut()
             val intent = Intent(activity,SignActivity::class.java)
             activity?.startActivity(intent)
+            requireActivity().finish()
+
         }
         return view
     }
