@@ -12,7 +12,7 @@ import com.google.firebase.database.FirebaseDatabase
 
 class SignActivity : AppCompatActivity() {
     private lateinit var auth : FirebaseAuth
-    var database = FirebaseDatabase.getInstance("https://aytar-f4152-default-rtdb.europe-west1.firebasedatabase.app").reference
+    var database = FirebaseDatabase.getInstance().reference //"https://aytar-f4152-default-rtdb.europe-west1.firebasedatabase.app"
 
     private lateinit var binding: ActivitySignBinding
 
