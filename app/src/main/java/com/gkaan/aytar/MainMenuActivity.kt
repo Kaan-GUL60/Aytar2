@@ -47,7 +47,10 @@ class MainMenuActivity : AppCompatActivity() {
                 val intent = Intent(this,SanalParaActivity::class.java)
                 startActivity(intent)
             }
-            binding.LayAlSveris
+            binding.LayAlSveris.setOnClickListener {
+                val intent = Intent(this,MuzeActivity::class.java)
+                startActivity(intent)
+            }
 
         }catch (e: Exception){
             Toast.makeText(applicationContext,"Bir hata oluştu: "  + e.localizedMessage, Toast.LENGTH_LONG).show()
