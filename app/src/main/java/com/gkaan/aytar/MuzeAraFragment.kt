@@ -66,6 +66,34 @@ class MuzeAraFragment : Fragment() {
             val navController = findNavController()
             navController.navigate(R.id.muzeDetayFragment,bundle)
         }
+        binding.m6.setOnClickListener {
+            val bundle = Bundle()
+
+            bundle.putString("mKod","m6")
+            val navController = findNavController()
+            navController.navigate(R.id.muzeDetayFragment,bundle)
+        }
+        binding.m7.setOnClickListener {
+            val bundle = Bundle()
+
+            bundle.putString("mKod","m7")
+            val navController = findNavController()
+            navController.navigate(R.id.muzeDetayFragment,bundle)
+        }
+        binding.m8.setOnClickListener {
+            val bundle = Bundle()
+
+            bundle.putString("mKod","m8")
+            val navController = findNavController()
+            navController.navigate(R.id.muzeDetayFragment,bundle)
+        }
+        binding.m9.setOnClickListener {
+            val bundle = Bundle()
+
+            bundle.putString("mKod","m9")
+            val navController = findNavController()
+            navController.navigate(R.id.muzeDetayFragment,bundle)
+        }
 
 
         return view

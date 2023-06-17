@@ -38,6 +38,7 @@
         <entry key="..\:/Users/ASUS/IntelliJIDEAProjects/AytarApp/app/src/main/res/layout/activity_profil.xml" value="0.16" />
         <entry key="..\:/Users/ASUS/IntelliJIDEAProjects/AytarApp/app/src/main/res/layout/activity_sanal_para.xml" value="0.14583333333333334" />
         <entry key="..\:/Users/ASUS/IntelliJIDEAProjects/AytarApp/app/src/main/res/layout/activity_sign.xml" value="0.25" />
+        <entry key="..\:/Users/ASUS/IntelliJIDEAProjects/AytarApp/app/src/main/res/layout/activity_sign_in_uyelik_bilgi.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/ASUS/IntelliJIDEAProjects/AytarApp/app/src/main/res/layout/fragment_ayarlar.xml" value="0.22" />
         <entry key="..\:/Users/ASUS/IntelliJIDEAProjects/AytarApp/app/src/main/res/layout/fragment_dashboard.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/ASUS/IntelliJIDEAProjects/AytarApp/app/src/main/res/layout/fragment_harita_sistemi.xml" value="0.25" />
@@ -52,6 +53,8 @@
         <entry key="..\:/Users/ASUS/IntelliJIDEAProjects/AytarApp/app/src/main/res/layout/fragment_profile.xml" value="0.1" />
         <entry key="..\:/Users/ASUS/IntelliJIDEAProjects/AytarApp/app/src/main/res/layout/fragment_satin_al_muze.xml" value="0.18" />
         <entry key="..\:/Users/ASUS/IntelliJIDEAProjects/AytarApp/app/src/main/res/layout/fragment_satin_alma_basarili.xml" value="0.14583333333333334" />
+        <entry key="..\:/Users/ASUS/IntelliJIDEAProjects/AytarApp/app/src/main/res/layout/fragment_uyelik_bilgi_profil_image.xml" value="0.19010416666666666" />
+        <entry key="..\:/Users/ASUS/IntelliJIDEAProjects/AytarApp/app/src/main/res/layout/fragment_uyelik_bilgi_test.xml" value="0.19010416666666666" />
         <entry key="..\:/Users/ASUS/IntelliJIDEAProjects/AytarApp/app/src/main/res/layout/fragment_web_wiev_muze.xml" value="0.14583333333333334" />
         <entry key="..\:/Users/ASUS/IntelliJIDEAProjects/AytarApp/app/src/main/res/layout/muze-ara/fragment_muze_ara.xml" value="0.25" />
         <entry key="..\:/Users/ASUS/IntelliJIDEAProjects/AytarApp/app/src/main/res/menu/bottom_nav_menu.xml" value="0.21875" />

@@ -59,6 +59,11 @@
     <string name="baslik37">Çıkış Yap</string>
     <string name="baslik38">Hesabın Var mı? Giriş Yap</string>
     <string name="baslik39">Eposta gönderildi</string>
+    <string name="baslik40">Profil resminizi seçin</string>
+    <string name="baslik41">Galeriyi aç</string>
+    <string name="baslik42">Hazır resim seçin</string>
+    <string name="baslik43">Devam Et</string>
+    <string name="baslik44">Adresinizi giriniz. (Yapacağınız alışverişler için adres bilginiz gereklidir.)</string>
 
     <string name="kart1">Kart No</string>
     <string name="kart2">CVC</string>

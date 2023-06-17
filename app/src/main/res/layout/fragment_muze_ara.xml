@@ -19,13 +19,13 @@
                 android:orientation="horizontal"
                 android:gravity="center"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                android:layout_height="match_parent" tools:ignore="UselessParent">
             <ImageView
                     android:src="@drawable/arrow_back_ios_48px"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:id="@+id/backImageMuze"
-                    android:layout_weight="1"/>
+                    android:layout_weight="1" tools:ignore="ContentDescription"/>
             <EditText
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -34,8 +34,8 @@
                     android:padding="10dp"
                     android:layout_weight="3"
                     android:layout_margin="30dp"
-                    android:ems="10"
-                    android:id="@+id/editTextTextPersonName"/>
+
+                    android:id="@+id/editTextTextPersonName" tools:ignore="Autofill"/>
         </LinearLayout>
     </LinearLayout>
     <ScrollView
@@ -76,7 +76,7 @@
                             android:gravity="center"
                             android:layout_height="24dp"
                             android:id="@+id/star1"
-                            android:layout_weight="1"/>
+                            android:layout_weight="1" tools:ignore="ContentDescription"/>
                 </LinearLayout>
                 <LinearLayout
                         android:orientation="horizontal"
@@ -95,7 +95,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:id="@+id/muzeResim1"
-                            android:layout_weight="1"/>
+                            android:layout_weight="1" tools:ignore="ContentDescription"/>
                 </LinearLayout>
             </LinearLayout>
             <LinearLayout
@@ -124,7 +124,7 @@
                             android:gravity="center"
                             android:layout_height="24dp"
                             android:id="@+id/star2"
-                            android:layout_weight="1"/>
+                            android:layout_weight="1" tools:ignore="ContentDescription"/>
                 </LinearLayout>
                 <LinearLayout
                         android:orientation="horizontal"
@@ -143,7 +143,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:id="@+id/muzeResim2"
-                            android:layout_weight="1"/>
+                            android:layout_weight="1" tools:ignore="ContentDescription"/>
                 </LinearLayout>
             </LinearLayout>
             <LinearLayout
@@ -172,7 +172,7 @@
                             android:gravity="center"
                             android:layout_height="24dp"
                             android:id="@+id/star3"
-                            android:layout_weight="1"/>
+                            android:layout_weight="1" tools:ignore="ContentDescription"/>
                 </LinearLayout>
                 <LinearLayout
                         android:orientation="horizontal"
@@ -191,7 +191,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:id="@+id/muzeResim3"
-                            android:layout_weight="1"/>
+                            android:layout_weight="1" tools:ignore="ContentDescription"/>
                 </LinearLayout>
             </LinearLayout>
             <LinearLayout
@@ -220,7 +220,7 @@
                             android:gravity="center"
                             android:layout_height="24dp"
                             android:id="@+id/star4"
-                            android:layout_weight="1"/>
+                            android:layout_weight="1" tools:ignore="ContentDescription"/>
                 </LinearLayout>
                 <LinearLayout
                         android:orientation="horizontal"
@@ -239,7 +239,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:id="@+id/muzeResim4"
-                            android:layout_weight="1"/>
+                            android:layout_weight="1" tools:ignore="ContentDescription"/>
                 </LinearLayout>
             </LinearLayout>
             <LinearLayout
@@ -268,7 +268,7 @@
                             android:gravity="center"
                             android:layout_height="24dp"
                             android:id="@+id/star5"
-                            android:layout_weight="1"/>
+                            android:layout_weight="1" tools:ignore="ContentDescription"/>
                 </LinearLayout>
                 <LinearLayout
                         android:orientation="horizontal"
@@ -287,7 +287,199 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:id="@+id/muzeResim5"
-                            android:layout_weight="1"/>
+                            android:layout_weight="1" tools:ignore="ContentDescription"/>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:id="@+id/m6"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/item_bg"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                <LinearLayout
+                        android:orientation="horizontal"
+                        android:gravity="center"
+                        android:layout_margin="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                    <TextView
+                            android:text="@string/hint4"
+                            android:layout_weight="4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/MuzeBaslik6"/>
+                    <ImageView
+                            android:src="@drawable/star"
+                            android:layout_width="24dp"
+                            android:gravity="center"
+                            android:layout_height="24dp"
+                            android:id="@+id/star6"
+                            android:layout_weight="1" tools:ignore="ContentDescription"/>
+                </LinearLayout>
+                <LinearLayout
+                        android:orientation="horizontal"
+                        android:gravity="center"
+                        android:layout_margin="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                    <TextView
+                            android:text="@string/hint5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/muzeAciklama6"
+                            android:layout_weight="2"/>
+                    <ImageView
+                            android:src="@drawable/ic_launcher_background"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/muzeResim6"
+                            android:layout_weight="1" tools:ignore="ContentDescription"/>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:id="@+id/m7"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/item_bg"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                <LinearLayout
+                        android:orientation="horizontal"
+                        android:gravity="center"
+                        android:layout_margin="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                    <TextView
+                            android:text="@string/hint4"
+                            android:layout_weight="4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/MuzeBaslik7"/>
+                    <ImageView
+                            android:src="@drawable/star"
+                            android:layout_width="24dp"
+                            android:gravity="center"
+                            android:layout_height="24dp"
+                            android:id="@+id/star7"
+                            android:layout_weight="1" tools:ignore="ContentDescription"/>
+                </LinearLayout>
+                <LinearLayout
+                        android:orientation="horizontal"
+                        android:gravity="center"
+                        android:layout_margin="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                    <TextView
+                            android:text="@string/hint5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/muzeAciklama7"
+                            android:layout_weight="2"/>
+                    <ImageView
+                            android:src="@drawable/ic_launcher_background"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/muzeResim7"
+                            android:layout_weight="1" tools:ignore="ContentDescription"/>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:id="@+id/m8"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/item_bg"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                <LinearLayout
+                        android:orientation="horizontal"
+                        android:gravity="center"
+                        android:layout_margin="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                    <TextView
+                            android:text="@string/hint4"
+                            android:layout_weight="4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/MuzeBaslik8"/>
+                    <ImageView
+                            android:src="@drawable/star"
+                            android:layout_width="24dp"
+                            android:gravity="center"
+                            android:layout_height="24dp"
+                            android:id="@+id/star8"
+                            android:layout_weight="1" tools:ignore="ContentDescription"/>
+                </LinearLayout>
+                <LinearLayout
+                        android:orientation="horizontal"
+                        android:gravity="center"
+                        android:layout_margin="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                    <TextView
+                            android:text="@string/hint5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/muzeAciklama8"
+                            android:layout_weight="2"/>
+                    <ImageView
+                            android:src="@drawable/ic_launcher_background"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/muzeResim8"
+                            android:layout_weight="1" tools:ignore="ContentDescription"/>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:id="@+id/m9"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/item_bg"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                <LinearLayout
+                        android:orientation="horizontal"
+                        android:gravity="center"
+                        android:layout_margin="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                    <TextView
+                            android:text="@string/hint4"
+                            android:layout_weight="4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/MuzeBaslik9"/>
+                    <ImageView
+                            android:src="@drawable/star"
+                            android:layout_width="24dp"
+                            android:gravity="center"
+                            android:layout_height="24dp"
+                            android:id="@+id/star9"
+                            android:layout_weight="1" tools:ignore="ContentDescription"/>
+                </LinearLayout>
+                <LinearLayout
+                        android:orientation="horizontal"
+                        android:gravity="center"
+                        android:layout_margin="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                    <TextView
+                            android:text="@string/hint5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/muzeAciklama9"
+                            android:layout_weight="2"/>
+                    <ImageView
+                            android:src="@drawable/ic_launcher_background"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/muzeResim9"
+                            android:layout_weight="1" tools:ignore="ContentDescription"/>
                 </LinearLayout>
             </LinearLayout>
         </LinearLayout>

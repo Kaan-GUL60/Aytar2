@@ -7,10 +7,11 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
 import androidx.navigation.fragment.findNavController
+import com.bumptech.glide.Glide
+import com.bumptech.glide.load.engine.DiskCacheStrategy
 import com.gkaan.aytar.databinding.FragmentMuzeDetayBinding
 import com.google.firebase.database.*
 import com.google.firebase.database.ktx.database
-import com.google.firebase.database.ktx.getValue
 import com.google.firebase.ktx.Firebase
 
 
@@ -49,25 +50,54 @@ class muzeDetayFragment : Fragment() {
     }
 
     private fun readMKod(m: String) {
-        database.child("muzeler").child(m).child("muzeAdi").get().addOnCompleteListener { task ->
-            if (task.isSuccessful) {
-                val data = task.result?.value // Gelen değeri al
+        val pathList: List<String> = listOf("muzeAdi","muzeDetay","muzeImages/b","muzeImages/v","muze3DView")
+        val muzeVeriList = mutableListOf<String>()
 
 
-                // Gelen değeri kullanmak için burada işlemler yapabilirsiniz
-                if (data != null) {
-                    val muzeAdi = data.toString()
-                    binding.muzeAdi.text = muzeAdi
+        for (path in pathList) {
+            database.child("muzeler").child(m).child(path).get().addOnCompleteListener { task ->
+                if (task.isSuccessful) {
+                    val data = task.result?.value // Gelen değeri al
+
+
+                    // Gelen değeri kullanmak için burada işlemler yapabilirsiniz
+                    if (data != null) {
+                        val muzeAdi = data.toString()
+                        //veriyi listeye ekle
+                        muzeVeriList.add(muzeAdi)
+
+                    }
+                } else {
+                    val exception = task.exception?.localizedMessage
+
+                    Toast.makeText(requireContext(), "Hata: " + exception, Toast.LENGTH_SHORT).show()
+                    // Hata durumunda yapılacak işlemler
+                    // Örneğin: exception?.message ile hata mesajını alabilirsiniz
                 }
-            } else {
-                val exception = task.exception?.localizedMessage
-
-                Toast.makeText(requireContext(),"Hata: " + exception, Toast.LENGTH_SHORT).show()
-                // Hata durumunda yapılacak işlemler
-                // Örneğin: exception?.message ile hata mesajını alabilirsiniz
             }
         }
+        val muzeAdi = muzeVeriList[0]
+        val muzeDetay=muzeVeriList[1]
+        val muzeImagesB = muzeVeriList[2]
+        val muzeImagesV = muzeVeriList[3]
+        val muze3DView = muzeVeriList[4]
+
+        binding.muzeAdi.text = muzeAdi
+        binding.textView6.text= muzeDetay
+
+        Glide.with(this)
+            .load(muzeImagesB)
+            .fitCenter()
+            .skipMemoryCache(true)
+            .diskCacheStrategy(DiskCacheStrategy.NONE)
+            .placeholder(R.drawable.add_photo_24)
+            .into(binding.mXbImageView)
+
+
+
     }
+}
+
 /*
     private fun readDataFromFirebase(tag: String) {
         val database =
@@ -188,4 +218,4 @@ class muzeDetayFragment : Fragment() {
 
 */
 
-}
+

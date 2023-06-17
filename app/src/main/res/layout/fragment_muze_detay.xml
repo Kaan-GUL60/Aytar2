@@ -127,6 +127,12 @@
                         android:layout_margin="10dp"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content" android:id="@+id/textView5"/>
+                <ImageView
+                        android:src="@drawable/add_photo_24"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp" android:id="@+id/mXbImageView"/>
                 <TextView
                         android:text="muze hakkında yazı yazmalı burada"
                         android:layout_margin="10dp"
