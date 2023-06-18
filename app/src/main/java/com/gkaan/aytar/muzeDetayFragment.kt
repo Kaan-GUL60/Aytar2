@@ -40,7 +40,7 @@ class muzeDetayFragment : Fragment() {
             findNavController().navigate(R.id.action_muzeDetayFragment_to_satinAlMuzeFragment)
         }
 
-        readMKod(mKod)
+        //readMKod(mKod)
 
 
         binding.returnButton.setOnClickListener {
@@ -49,7 +49,7 @@ class muzeDetayFragment : Fragment() {
         return view
     }
 
-    private fun readMKod(m: String) {
+   /* private fun readMKod(m: String) {
         val pathList: List<String> = listOf("muzeAdi","muzeDetay","muzeImages/b","muzeImages/v","muze3DView")
         val muzeVeriList = mutableListOf<String>()
 
@@ -92,11 +92,11 @@ class muzeDetayFragment : Fragment() {
             .diskCacheStrategy(DiskCacheStrategy.NONE)
             .placeholder(R.drawable.add_photo_24)
             .into(binding.mXbImageView)
-
+*/
 
 
     }
-}
+
 
 /*
     private fun readDataFromFirebase(tag: String) {

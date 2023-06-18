@@ -8,79 +8,88 @@
         android:background="@color/background_color"
         tools:context=".UyelikBilgiTestFragment">
 
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent">
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                      android:orientation="vertical">
+            <TextView
+                    android:text="@string/baslik44"
+                    android:textSize="20sp"
+                    android:gravity="center"
+                    android:layout_margin="15dp"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/poppins_bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:id="@+id/textView39"
+            />
+            <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/rounde_bg"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+            >
+                <TextView
+                        android:text="@string/baslik17"
+                        android:fontFamily="@font/poppins_light"
+                        android:layout_margin="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" android:id="@+id/textView30"/>
+                <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textPersonName"
+                        android:hint="@string/hint10"
+                        android:ems="10"
+                        android:textColorHint="@color/black"
+                        android:id="@+id/adresEditText"/>
+                <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                    <EditText
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:inputType="textPersonName"
+                            android:hint="@string/hint7"
+                            android:textColorHint="@color/black"
+                            android:ems="10"
+                            android:layout_weight="1"
+                            android:id="@+id/ilEditText"/>
+                    <EditText
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:inputType="textPersonName"
+                            android:hint="@string/hint8"
+                            android:layout_weight="1"
+                            android:textColorHint="@color/black"
+                            android:ems="10"
+                            android:id="@+id/İlceEditText"/>
+                    <EditText
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:inputType="textPersonName"
+                            android:hint="@string/hint9"
+                            android:textColorHint="@color/black"
+                            android:ems="10"
+                            android:id="@+id/mahalleEditText"
+                            android:layout_weight="1"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
     <Button
             android:text="@string/baslik43"
             android:layout_margin="10dp"
             android:background="@drawable/green_button_bg"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" android:id="@+id/button4"
-            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/button4"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"/>
 
-    <LinearLayout
-            android:orientation="vertical"
-            android:layout_margin="10dp"
-            android:background="@drawable/rounde_bg"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" app:layout_constraintTop_toBottomOf="@+id/textView39"
-            app:layout_constraintBottom_toTopOf="@+id/button4" app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent">
-        <TextView
-                android:text="@string/baslik17"
-                android:fontFamily="@font/poppins_light"
-                android:layout_margin="10dp"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content" android:id="@+id/textView30"/>
-        <EditText
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:inputType="textPersonName"
-                android:hint="@string/hint10"
-                android:ems="10"
-                android:textColorHint="@color/black"
-                android:id="@+id/adresEditText"/>
-        <LinearLayout
-                android:orientation="horizontal"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
-            <EditText
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:inputType="textPersonName"
-                    android:hint="@string/hint7"
-                    android:textColorHint="@color/black"
-                    android:ems="10"
-                    android:layout_weight="1"
-                    android:id="@+id/ilEditText"/>
-            <EditText
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:inputType="textPersonName"
-                    android:hint="@string/hint8"
-                    android:layout_weight="1"
-                    android:textColorHint="@color/black"
-                    android:ems="10"
-                    android:id="@+id/İlceEditText"/>
-            <EditText
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:inputType="textPersonName"
-                    android:hint="@string/hint9"
-                    android:textColorHint="@color/black"
-                    android:ems="10"
-                    android:id="@+id/mahalleEditText"
-                    android:layout_weight="1"/>
-        </LinearLayout>
-    </LinearLayout>
-    <TextView
-            android:text="@string/baslik44"
-            android:textSize="20sp"
-            android:gravity="center"
-            android:layout_margin="15dp"
-            android:textColor="@color/black"
-            android:fontFamily="@font/poppins_bold"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" android:id="@+id/textView39"
-            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"/>
 </androidx.constraintlayout.widget.ConstraintLayout>
