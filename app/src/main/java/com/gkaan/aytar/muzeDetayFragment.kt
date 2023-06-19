@@ -1,5 +1,6 @@
 package com.gkaan.aytar
 
+import android.net.Uri
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -13,12 +14,14 @@ import com.gkaan.aytar.databinding.FragmentMuzeDetayBinding
 import com.google.firebase.database.*
 import com.google.firebase.database.ktx.database
 import com.google.firebase.ktx.Firebase
+import com.google.firebase.storage.FirebaseStorage
 
 
 class muzeDetayFragment : Fragment() {
     private var _binding: FragmentMuzeDetayBinding? = null
     private val binding get() = _binding!!
     private lateinit var database: DatabaseReference
+    private lateinit var storage: FirebaseStorage
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -35,12 +38,37 @@ class muzeDetayFragment : Fragment() {
 
         val mKod = arguments?.getString("mKod").toString()
 
+        hadiSimdiOlacaksin(mKod)
+
         database = Firebase.database.reference
         binding.biletAlButton.setOnClickListener {
             findNavController().navigate(R.id.action_muzeDetayFragment_to_satinAlMuzeFragment)
         }
 
+        /*val imagePath = "m1/m1b.png"
+        val storageReference = FirebaseStorage.getInstance().reference.child(imagePath)
+        val imageUrlTask = storageReference.downloadUrl
+
+        imageUrlTask.addOnCompleteListener { uri ->
+            val imageUrl = uri.result.toString()
+
+            Glide.with(this)
+                .load(imageUrl)
+                .fitCenter()
+                .skipMemoryCache(true)
+                .diskCacheStrategy(DiskCacheStrategy.NONE)
+                .placeholder(R.drawable.add_photo_24)
+                .into(binding.mXbImageView)
+        }.addOnFailureListener {
+            Toast.makeText(requireContext(), "Hata: gerçekleşmiştir", Toast.LENGTH_SHORT).show()
+        }.addOnCanceledListener {
+            Toast.makeText(requireContext(), "Hata: gerçekleşmiştir", Toast.LENGTH_SHORT).show()
+        }*/
+
+
         //readMKod(mKod)
+        //val resimURL = "gs://aytarmobil.appspot.com/m1/m1a.png"//muzeImagesList[indexDegeri]
+
 
 
         binding.returnButton.setOnClickListener {
@@ -49,23 +77,20 @@ class muzeDetayFragment : Fragment() {
         return view
     }
 
-   /* private fun readMKod(m: String) {
-        val pathList: List<String> = listOf("muzeAdi","muzeDetay","muzeImages/b","muzeImages/v","muze3DView")
-        val muzeVeriList = mutableListOf<String>()
+    private fun hadiSimdiOlacaksin(mKod: String) {
+
+        database = Firebase.database.reference
 
 
-        for (path in pathList) {
-            database.child("muzeler").child(m).child(path).get().addOnCompleteListener { task ->
+        database.child("muzeler").child(mKod).child("muzeAdi").get()
+            .addOnCompleteListener { task ->
                 if (task.isSuccessful) {
                     val data = task.result?.value // Gelen değeri al
-
-
                     // Gelen değeri kullanmak için burada işlemler yapabilirsiniz
                     if (data != null) {
-                        val muzeAdi = data.toString()
+                        val gelenVeri = data.toString()
                         //veriyi listeye ekle
-                        muzeVeriList.add(muzeAdi)
-
+                        binding.muzeAdi.text = gelenVeri
                     }
                 } else {
                     val exception = task.exception?.localizedMessage
@@ -75,27 +100,109 @@ class muzeDetayFragment : Fragment() {
                     // Örneğin: exception?.message ile hata mesajını alabilirsiniz
                 }
             }
+        database.child("muzeler").child(mKod).child("muzeHakkinda").get()
+            .addOnCompleteListener { task ->
+                if (task.isSuccessful) {
+                    val data = task.result?.value // Gelen değeri al
+                    // Gelen değeri kullanmak için burada işlemler yapabilirsiniz
+                    if (data != null) {
+                        val gelenVeri = data.toString()
+                        //veriyi listeye ekle
+                        binding.textView6.text = gelenVeri
+                    }
+                } else {
+                    val exception = task.exception?.localizedMessage
+
+                    Toast.makeText(requireContext(), "Hata: " + exception, Toast.LENGTH_SHORT).show()
+                    // Hata durumunda yapılacak işlemler
+                    // Örneğin: exception?.message ile hata mesajını alabilirsiniz
+                }
+            }
+        val imagePath = mKod + "/" + mKod + "b.png"
+        val storageReference = FirebaseStorage.getInstance().reference.child(imagePath)
+        val imageUrlTask = storageReference.downloadUrl
+
+
+
+        imageUrlTask.addOnCompleteListener { uri ->
+            val imageUrl = uri.result.toString()
+            Glide.with(this)
+                .load(imageUrl)
+                .fitCenter()
+                .skipMemoryCache(true)
+                .diskCacheStrategy(DiskCacheStrategy.NONE)
+                .placeholder(R.drawable.add_photo_24)
+                .into(binding.mXbImageView)
         }
-        val muzeAdi = muzeVeriList[0]
-        val muzeDetay=muzeVeriList[1]
-        val muzeImagesB = muzeVeriList[2]
-        val muzeImagesV = muzeVeriList[3]
-        val muze3DView = muzeVeriList[4]
 
-        binding.muzeAdi.text = muzeAdi
-        binding.textView6.text= muzeDetay
+        try {
+            val videoPath = mKod + "/" + mKod + "v.png"
+            val storageReference2 = FirebaseStorage.getInstance().reference.child(videoPath)
+            val videoUrlTask = storageReference2.downloadUrl
 
-        Glide.with(this)
-            .load(muzeImagesB)
-            .fitCenter()
-            .skipMemoryCache(true)
-            .diskCacheStrategy(DiskCacheStrategy.NONE)
-            .placeholder(R.drawable.add_photo_24)
-            .into(binding.mXbImageView)
-*/
+            binding.muzeVideoView.setVideoURI(Uri.parse(videoUrlTask.toString()))
+            binding.muzeVideoView.requestFocus()
 
+            binding.muzeVideoView.setOnPreparedListener{ mediaPlayer ->
+                mediaPlayer.isLooping = true
+                binding.muzeVideoView.start()
+            }
+
+
+        }catch(e: Exception){
+            Toast.makeText(requireContext(),"video için hata oluştu veya video bulunamadı",Toast.LENGTH_LONG).show()
+        }
 
     }
+
+
+}
+
+
+/* private fun readMKod(m: String) {
+     val pathList: List<String> = listOf("muzeAdi","muzeDetay","muzeImages/b","muzeImages/v","muze3DView")
+     val muzeVeriList = mutableListOf<String>()
+
+
+     for (path in pathList) {
+         database.child("muzeler").child(m).child(path).get().addOnCompleteListener { task ->
+             if (task.isSuccessful) {
+                 val data = task.result?.value // Gelen değeri al
+
+
+                 // Gelen değeri kullanmak için burada işlemler yapabilirsiniz
+                 if (data != null) {
+                     val muzeAdi = data.toString()
+                     //veriyi listeye ekle
+                     muzeVeriList.add(muzeAdi)
+
+                 }
+             } else {
+                 val exception = task.exception?.localizedMessage
+
+                 Toast.makeText(requireContext(), "Hata: " + exception, Toast.LENGTH_SHORT).show()
+                 // Hata durumunda yapılacak işlemler
+                 // Örneğin: exception?.message ile hata mesajını alabilirsiniz
+             }
+         }
+     }
+     val muzeAdi = muzeVeriList[0]
+     val muzeDetay=muzeVeriList[1]
+     val muzeImagesB = muzeVeriList[2]
+     val muzeImagesV = muzeVeriList[3]
+     val muze3DView = muzeVeriList[4]
+
+     binding.muzeAdi.text = muzeAdi
+     binding.textView6.text= muzeDetay
+
+     Glide.with(this)
+         .load(muzeImagesB)
+         .fitCenter()
+         .skipMemoryCache(true)
+         .diskCacheStrategy(DiskCacheStrategy.NONE)
+         .placeholder(R.drawable.add_photo_24)
+         .into(binding.mXbImageView)
+*/
 
 
 /*
