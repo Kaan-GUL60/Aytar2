@@ -1,2 +1,2 @@
 # Aytar
-Aytar mobil uygulaması 
+Aytar mobil uygulaması tamamlanmamış durumdaki son sürüm
