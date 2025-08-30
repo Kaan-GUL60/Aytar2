@@ -14,4 +14,4 @@ Aytar mobil uygulaması tamamlanmamış durumdaki son sürüm
 ![Ana Ekran](Arayüz/ProfilEkranı.png)
 ![Ana Ekran](Arayüz/SatınAL+Geçmiş.png)
 ![Ana Ekran](Arayüz/ÜrünAra.png)
-![Ana Ekran](Arayüz/ÜrünDeta_YorumMüzeAraDetay_Yorum.png)
+![Ana Ekran](Arayüz/ÜrünDeta_Yorum.png)
